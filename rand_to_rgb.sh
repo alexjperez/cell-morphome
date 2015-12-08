@@ -8,30 +8,28 @@
 # Written by: Alex Perez - alexjperez@gmail.com on 2015-12-07
 
 # Define IMOD R,G,B values for each structure
-declare -A rgb
-rgb[plasmamembrane]="1,1,1"
-rgb[primarycilium]="1,1,1"
-rgb[nucleus]="1,1,0"
-rgb[nucleolus]="0,0,1"
-rgb[mitochondrion]="0,1,0"
-rgb[lysosome]="1,0,0"
-rgb[stigmoidbody]="0,1,1"
-rgb[multivesicularbody]="0.2,0,0.8"
-rgb[autophagosome]="1,0.5,1"
-rgb[autolysosome]="1,0,1"
+declare -A rgb=([plasmamembrane]="1,1,1"
+    [primarycilium]="1,1,1"
+    [nucleus]="1,1,0"
+    [nucleolus]="0,0,1"
+    [mitochondrion]="0,1,0"
+    [lysosome]="1,0,0"
+    [stigmoidbody]="0,1,1"
+    [multivesicularbody]="0.2,0,0.8"
+    [autophagosome]="1,0.5,1"
+    [autolysosome]="1,0,1")
 
 # Define IMOD object names for each structure
-declare -A name
-name[plasmamembrane]="Plasma Membrane"
-name[primarycilium]="Primary Cilium"
-name[nucleus]="Nucleus"
-name[nucleolus]="Nucleolus"
-name[mitochondrion]="Mitochondrion"
-name[lysosome]="Lysosome"
-name[stigmoidbody]="Stigmoid Body"
-name[multivesicularbody]="Multivesicular Body"
-name[autophagosome]="Autophagosome"
-name[autolysosome]="Autolysosome"
+declare -A name=([plasmamembrane]="Plasma Membrane"
+    [primarycilium]="Primary Cilium"
+    [nucleus]="Nucleus"
+    [nucleolus]="Nucleolus"
+    [mitochondrion]="Mitochondrion"
+    [lysosome]="Lysosome"
+    [stigmoidbody]="Stigmoid Body"
+    [multivesicularbody]="Multivesicular Body"
+    [autophagosome]="Autophagosome"
+    [autolysosome]="Autolysosome")
 
 # Loop over all files with the 'rand' color identifier
 for file in *rand*.mod; do
